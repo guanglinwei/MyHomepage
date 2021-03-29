@@ -9,7 +9,8 @@ import text from "../../public/projects/air.md";
 
 const airRenderer = Object.assign(MdRenderer, {
     // FIX LINKS NOT RENDER
-    strong: ({ value }) => {
+    strong: ({ node }) => {
+        const value = node.children[0].value;
         if(value.includes("AIRMAKERFAIREGALLERY")) {
             return (
                 <Container fluid className="text-center">

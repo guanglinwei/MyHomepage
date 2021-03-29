@@ -2,6 +2,11 @@ import * as React from "react";
 import Image from "next/image";
 
 const MdRenderer = {
+    paragraph: (props) => {
+        const element = props.children[0];
+        const {node, ...pProps} = props;
+        return (element.type.name === 'image' || element.type.name === 'strong') ? { ...element } : <p {...pProps} />;
+    },
     image: ({ src, alt }) => {
         // use alt for width and height
         // alt, width, height

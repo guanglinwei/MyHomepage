@@ -4,7 +4,7 @@ import { Jumbotron, Row, Col } from "react-bootstrap";
 
 const GithubJumbotron = ({ target, text }) => {
     return (
-    <Jumbotron fluid>
+    <Jumbotron fluid className="position-relative">
         <Row className="text-center align-items-center">
             <Col xs={4}><Github size={80}/></Col>
             <Col xs={6}>
