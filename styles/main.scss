@@ -39,3 +39,19 @@
 .carousel-caption {
     background-color: rgba(10, 10, 10, .6);
 }
+
+$banner-overlay-color: rgba(0, 0, 0, .3);
+
+.index-banner {
+    background: linear-gradient(0deg, $banner-overlay-color, $banner-overlay-color), url(/banner.png);
+    background-size: cover;
+    min-height: 300px;
+}
+
+.banner-text > * {
+    color: #eee;
+}
+
+.filter-white {
+    filter: invert(99%) sepia(61%) saturate(38%) hue-rotate(251deg) brightness(112%) contrast(87%);
+}

@@ -2,6 +2,7 @@ import * as React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import StandardPage from "../../components/standard-page";
 import TopicCard from "../../components/topic-card";
+import StandardBanner from "../../components/standard-banner";
 
 // each links to a page with more details 
 // md file
@@ -43,6 +44,7 @@ const projects = [
 const ProjectsPage = () => {
     return (
         <StandardPage>
+            <StandardBanner title={"Projects"} image={"/clipboard-data.svg"} imageSvgColorFilter={"filter-white"}/>
             <Container>
                 <Row>
                     {projects.map((project, i) => {

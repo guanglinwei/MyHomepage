@@ -6,6 +6,7 @@ const HeaderNavBar = () => {
     return (
         <Navbar bg="light" variant="light" expand="lg" sticky="top">
             <Navbar.Brand href="/">Guang-Lin Wei</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="/projects">Projects</Nav.Link>

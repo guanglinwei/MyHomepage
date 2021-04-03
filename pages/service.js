@@ -6,11 +6,13 @@ import ReactMarkdown from "react-markdown";
 import MdRenderer from "../components/standard-md-renderer";
 
 import text from "../public/service.md";
+import StandardBanner from "../components/standard-banner";
 
 const serviceRenderer = Object.assign(MdRenderer, {
     emphasis: ({ node }) => {
         const value = node.children[0].value;
         // console.log(value);
+        if(value.includes("LINEBREAK")) return <br/>
 
         return (
         <div>
@@ -136,8 +138,9 @@ const serviceRenderer = Object.assign(MdRenderer, {
 const ServicePage = () => {
     return (
         <StandardPage>
+            <StandardBanner title={"Service"} image={"/globe2.svg"} imageSvgColorFilter={"filter-white"}/>
             <Container className="text-center">
-                <h1>Community Service</h1>
+                {/* <h1>Community Service</h1> */}
                 <br/>
                 <ReactMarkdown source={text} renderers={serviceRenderer} linkTarget={"_blank"}/>       
             </Container>

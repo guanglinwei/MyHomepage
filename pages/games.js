@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import GhostCard from "../components/ghost-card";
+import StandardBanner from "../components/standard-banner";
 import StandardPage from "../components/standard-page";
 // import Image from "next/image";
 
@@ -31,6 +32,7 @@ const GamesPage = () => {
     ];
     return (
         <StandardPage>
+            <StandardBanner title={"Games"} image={"/controller.svg"} imageSvgColorFilter={"filter-white"}/>
             <Container fluid>
                 <Row>
                     {games.map((game, i) => {

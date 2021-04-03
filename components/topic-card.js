@@ -17,8 +17,11 @@ const TopicCard = ({ title, image, alt, desc, header, footer, target, tags, card
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     {/* <Card.Img src={image} alt={alt || "image"} className="my-4"/> */}
+                    
                     {image && 
-                        <Image src={image} layout="responsive" width={500} height={500} alt={alt || "image"} className="my-4" style/>
+                        <div className="text-center" >
+                            <Image src={image} layout="intrinsic" width={200} height={200} alt={alt || "image"}/>
+                        </div>
                     }
                     {children}
                     <Card.Text>{desc}</Card.Text>
