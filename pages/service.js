@@ -23,6 +23,7 @@ const serviceRenderer = Object.assign(MdRenderer, {
         </div>
         );
     },
+    // bold for gallery
     strong: ({ node }) => {
         const value = node.children[0].value;
         if(value.includes("2016EXPOGALLERY")) {
@@ -66,12 +67,6 @@ const serviceRenderer = Object.assign(MdRenderer, {
                                     <p>Event-goers listening to a speech</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
-                            {/* <Carousel.Item>
-                                <Image width={853} height={480} layout="intrinsic" src="/airgia2.jpg" alt="Maker Faire award"/>
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <Image width={640} height={480} layout="intrinsic" src="/airgia3.jpg" alt="A.I.R team on a panel"/>
-                            </Carousel.Item> */}
                         </Carousel>
                     </Jumbotron>
                     <br/>
@@ -114,7 +109,7 @@ const serviceRenderer = Object.assign(MdRenderer, {
                     <Jumbotron>
                         <Carousel>
                             <Carousel.Item>
-                                <Image width={669} height={480} layout="intrinsic" src="/mask1.PNG" alt="Me and my sisters making face shields"/>
+                                <Image width={669} height={480} layout="intrinsic" src="/mask1.png" alt="Me and my sisters making face shields"/>
                                 <Carousel.Caption>
                                     <p>My and my sisters making face shields</p>
                                 </Carousel.Caption>

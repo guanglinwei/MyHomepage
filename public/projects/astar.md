@@ -1,4 +1,4 @@
-![Grid with walls and path,480,480](/astar1.PNG)
+![Grid with walls and path,480,480](/astar1.png)
 
 A simple pathfinding demo for the [Astar/A* search algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm).   
        

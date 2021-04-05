@@ -60,7 +60,7 @@ const rcjRenderer = Object.assign(MdRenderer, {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Image width={728} height={480} layout="intrinsic" src="/rcjnew3.PNG" alt="Design for base layer of robot"/>
+                                <Image width={728} height={480} layout="intrinsic" src="/rcjnew3.png" alt="Design for base layer of robot"/>
                                 <Carousel.Caption>
                                     <p>Design for the base layer</p>
                                 </Carousel.Caption>

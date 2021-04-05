@@ -1,4 +1,4 @@
-![AIR logo, 480, 360](/airlogo.PNG)
+![AIR logo, 480, 360](/airlogo.png)
 
 ## About  
 
@@ -9,7 +9,7 @@ The team was renamed to Team A.I.R. as we continued to work on the Artificial In
 
 The AIR uses computer vision to detect and remove recyclables from trash.  
 
-![Initial design in SketchUp, 574, 450](/airdesign1.PNG)  
+![Initial design in SketchUp, 574, 450](/airdesign1.png)  
 
 *Initial design on SketchUp*  
    
