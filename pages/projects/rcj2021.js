@@ -7,7 +7,7 @@ import Image from "next/image";
 
 import text from "../../public/projects/rcj2021.md";
 
-const rcjRenderer = Object.assign(MdRenderer, {
+const rcjRenderer = {...MdRenderer, ...{
     strong: ({ node }) => {
         const value = node.children[0].value;
         if(value.includes("RCJOLDGALLERY")) {
@@ -72,7 +72,7 @@ const rcjRenderer = Object.assign(MdRenderer, {
         }
         return <strong>{value}</strong>;
     }
-});
+}};
 
 const RCJ2021ProjectPage = () => {
     return (

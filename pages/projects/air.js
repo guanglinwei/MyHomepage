@@ -7,7 +7,7 @@ import Image from "next/image";
 
 import text from "../../public/projects/air.md";
 
-const airRenderer = Object.assign(MdRenderer, {
+const airRenderer = {...MdRenderer, ...{
     strong: ({ node }) => {
         const value = node.children[0].value;
         if(value.includes("AIRMAKERFAIREGALLERY")) {
@@ -51,7 +51,7 @@ const airRenderer = Object.assign(MdRenderer, {
         }
         return <strong>{value}</strong>;
     }
-});
+}};
 
 const AirProjectPage = () => {
     return (
