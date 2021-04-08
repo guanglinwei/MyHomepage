@@ -24,5 +24,6 @@ The Spongebots has been to the Liberty Science Center multiple times to showcase
 **SCICENTERGALLERY**
 *LINEBREAK* 
 
-*COVID Face Shields*
+*COVID Face Shields*  
+During the COVID-19 pandemic, the Spongebots 3D-printed and assembled face shields intended for medical use.
 **MASKGALLERY**
