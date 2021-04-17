@@ -14,8 +14,7 @@ const HeaderNavBar = () => {
                     <Nav.Link href="/service">Service</Nav.Link>
                 </Nav>
                 <Navbar.Text>
-                    {/* TODO: make git repo for this stuff */}
-                    <a href="http://google.com" target="_blank" rel="noreferrer" className="font-italic font-weight-light" style={{textDecoration: 'none'}}>
+                    <a href="https://github.com/guanglinwei/MyHomepage" className="font-italic font-weight-light" style={{textDecoration: 'none'}}>
                         <Github size={24}/>
                         <span> Source code</span>
                     </a>
